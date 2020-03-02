@@ -10,7 +10,7 @@ the whole process, just skip the build steps.
 
 ## The items that led to Kali NetHunter for Samsung J7 2016 (SM-J710N)
 
-1. ADB
+1. [ADB](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#1-adb)
 1. Heimdall
 1. TWRP
 1. Custom ROM
@@ -214,6 +214,10 @@ the whole process, just skip the build steps.
 		$ cd j7xelte-nethunter
 		
 	* Backup mirror:	https://github.com/volgk/j7xelte-nethunter
+* Download toolchain64:
+			
+		git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b  marshmallow-release toolchain64
+		
 * Modify the make wrapper conform your needs
   		
 		$ vim make
