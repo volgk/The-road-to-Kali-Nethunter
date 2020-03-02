@@ -11,15 +11,14 @@ the whole process, just skip the build steps.
 ## The items that led to Kali NetHunter for Samsung J7 2016 (SM-J710N)
 
 1. [ADB](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#1-adb)
-1. Heimdall
-1. TWRP
-1. Custom ROM
-1. SuperSU
-1. BusyBox
-1. Kali Nethunter kernel
-1. Kali Nethunter build
-1. Kali Nethunter install
-
+1. [Heimdall](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#2-heimdall)
+1. [TWRP](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#3-twrp)
+1. [Custom ROM](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#4-custom-rom)
+1. [SuperSU](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#5-supersu)
+1. [BusyBox](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#6-busybox)
+1. [Kali NetHunter kernel build](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#7-kali-nethunter-kernel-build)
+1. [Kali NetHunter build](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#8-kali-nethunter-build)
+1. [Kali NetHunter install](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#9-install-kali-nethunter)
 ---
 ## 1. ADB
 
@@ -229,7 +228,7 @@ the whole process, just skip the build steps.
 		$ sudo ./make -j$(nproc)
 
 ---
-## 8. Kali Nethunter build
+## 8. Kali NetHunter build
 >	NOTE: If you want to install without manual building go to step 9
 * Download kali-nethunter-project
 	
