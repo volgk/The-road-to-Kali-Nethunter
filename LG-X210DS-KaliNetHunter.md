@@ -3,15 +3,13 @@ Porting Kali Nethunter to LG K7 (X210DS)
 
 ## The items that led to Kali Nethunter for LG
 
-1. Adb
+1. ADB
 1. TWRP
 1. SudoSU
 1. BusyBox
 1. Kali Nethunter build
 1. Kali Nethunter install
-1. Custom ROM
-1. SP Flash
-
+1. SP Flash Tool and Custom ROM
 ---
 ## ADB
 
@@ -63,14 +61,13 @@ Porting Kali Nethunter to LG K7 (X210DS)
 			$ adb devices
 			List of devices attached
 			GUU85DVONB8PAQSC        device
-	* Troleshoots with permittions
+	* Troleshoots with permissions
 		* Link:	https://exceptionshub.com/android-debug-bridge-adb-device-no-permissions.html
 ---
 ## TWRP
-
 * Download TWRP image specific for LG K7
-	*Backup mirror:	    https://drive.google.com/open?id=1QEGxB0hF6guvaRZtuKn4SKgwDkZZ-2A3	
-	*Md5sum:	    11d31af279b31c6238663172cae1a308		
+	* Backup mirror:	https://drive.google.com/open?id=1QEGxB0hF6guvaRZtuKn4SKgwDkZZ-2A3	
+	* Md5sum:			11d31af279b31c6238663172cae1a308		
 * Unlock OEM
 	* Unlock OEM in Developers mode
 		* Settings -> Developers mode -> Unlock OEM
@@ -134,12 +131,13 @@ Porting Kali Nethunter to LG K7 (X210DS)
 	* Install -> (Up A Level) -> external_sd -> UPDATE-SuperSU-v2.46.zip -> Install Zip -> Swipe to confirm Flash
 * Reboot System
 * If you have this error 
+		
 		Failed to mount '/data' (Invalid argument)
 		...done
 		Unable to mount storage
-	do:
-		* Wipe -> Advanced Wipe -> Data -> Repair or Change File System -> Change File System -> EXT2 -> Swipe to Change
-		* Reflash SuperSU zip file
+		
+	* Wipe -> Advanced Wipe -> Data -> Repair or Change File System -> Change File System -> EXT2 -> Swipe to Change
+	* Reflash SuperSU zip file
 ---
 ##  BusyBox
 * Download the last version from github
@@ -148,7 +146,7 @@ Porting Kali Nethunter to LG K7 (X210DS)
 	* Md5sum:	    e9c197251ee35ef354f6561c9efe6c06
 * Install with adb
 	
-	$ adb install ~/busybox-1.31.1-46.apk
+		$ adb install ~/busybox-1.31.1-46.apk
 
 * Or install from Google Apps Store
 ---
@@ -158,18 +156,18 @@ Porting Kali Nethunter to LG K7 (X210DS)
 
 * Download kali-nethunter-project
 	
-	$ git clone https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-project
-	$ cd kali-nethunter-project/nethunter-installer
+		$ git clone https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-project
+		$ cd kali-nethunter-project/nethunter-installer
 
-* Build the NetHunter zip file
-	* Help message
+* Help message
 		
-		$ python build.py -h
-	
->   NOTE:   Full rootfs is to much for this device. So use minimal rootfs.
-	    If zip NetHunter with boot animation and wallpaper you can't boot.
+			$ python build.py -h
 
-	* Build NetHunter
+>   NOTE:   Full rootfs is to much for this device. So use minimal rootfs.
+
+>	NOTE:	If build NetHunter with boot animation and wallpaper, you cannot boot. So build without.
+	
+* Build NetHunter
 		
 		$ python build.py -g armhf -l -fs minimal -nb
 
@@ -180,10 +178,10 @@ Porting Kali Nethunter to LG K7 (X210DS)
 	* SuperSU:  installed
 	* BusyBox:  installed
 * Now flash Kali NetHunter zip file with TWRP
-	Link:	https://drive.google.com/open?id=145z0h5bkm3EQgCHx_185cEowIU2KU-Rz
-	Md5sum:	f1769dd5af172ddb475b3ad63386d6fa
+	* Link:	https://drive.google.com/open?id=145z0h5bkm3EQgCHx_185cEowIU2KU-Rz
+	* Md5sum:	f1769dd5af172ddb475b3ad63386d6fa
 ---
-## SP Flash and Custom ROMs
+## SP Flash Tool and Custom ROM
 
 > NOTE:	This tool is usefull when you make something wrong, and the right option is to start from begin.
 
@@ -194,20 +192,18 @@ Porting Kali Nethunter to LG K7 (X210DS)
 	
 	$ ./flash_tool
 
-* Download Custom ROM and unpack it
-	* Link:		    
-	* Backup mirror:    
-	* Md5sum
-
-	* Link:
-	* Backup mirror:
-	* Md5sum:
+* Download Custom ROM and unpack it	    
+	* Backup mirror:	https://drive.google.com/open?id=1GKMQKCn9ss3NBN7HfBjkz08UAeQuh3u4  
+	* Md5sum:			b580e9a47fe85d6778b6843fa387737a
+	
+	* Backup mirror:	https://drive.google.com/open?id=15CpiL2avVypQ_4XZZhNMVwdrnH2j8K5u
+	* Md5sum:			aa7613e727ed02b9631e7f9850a53026
 * In 'Scatter-loading File' chose the *_scatter.txt file from unpacked ROM
 * Unmark 'preloader'
 * Be sure is on 'Download Only' mode
 * Press Download 
 * Make sure your device is Poewr off and unpluget from USB cable
-* Take pessed Volume Down Button and replug the device until you'll see that download begin.
+* Take pressed Volume Down Button and replug the device until you'll see that download begin.
 >   NOTE:   Be careful, don't tuch the USB cable and don't intrerrupt the download process.
 * Reboot.
-
+* Tutorial link:	https://androidmtk.com/flash-stock-rom-using-smart-phone-flash-tool
