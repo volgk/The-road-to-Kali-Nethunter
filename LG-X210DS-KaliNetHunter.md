@@ -3,13 +3,13 @@ Porting Kali Nethunter to LG K7 (X210DS)
 
 ## The items that led to Kali Nethunter for LG
 
-1. ADB
-1. TWRP
-1. SudoSU
-1. BusyBox
-1. Kali Nethunter build
-1. Kali Nethunter install
-1. SP Flash Tool and Custom ROM
+1. [ADB](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/LG-X210DS-KaliNetHunter.md#adb)
+1. [TWRP](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/LG-X210DS-KaliNetHunter.md#twrp)
+1. [SuperSU](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/LG-X210DS-KaliNetHunter.md#supersu)
+1. [BusyBox](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/LG-X210DS-KaliNetHunter.md#busybox)
+1. [Kali Nethunter build](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/LG-X210DS-KaliNetHunter.md#kali-nethunter-build)
+1. [Kali Nethunter install](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/LG-X210DS-KaliNetHunter.md#install-kali-nethunter)
+1. [SP Flash Tool and Custom ROM](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/LG-X210DS-KaliNetHunter.md#sp-flash-tool-and-custom-rom)
 ---
 ## ADB
 
