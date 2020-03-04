@@ -1,6 +1,10 @@
 Porting a Kali Nethunter to Samsung J7 2016
 ===========================================
 
+<img src="https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/images/SM_Kali_NetHunter.jpg" width="300" align="right" style="float" />
+
+<p align="left">
+
 Here I will briefly describe the process of porting a Kali Nethunter to
 Samsung J7 2016 (j7xelte) device.
 
@@ -19,6 +23,9 @@ the whole process, just skip the build steps.
 1. [Kali NetHunter kernel build](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#7-kali-nethunter-kernel-build)
 1. [Kali NetHunter build](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#8-kali-nethunter-build)
 1. [Kali NetHunter install](https://github.com/volgk/The-road-to-Kali-Nethunter/blob/master/Samsung-J7-2016-KaliNetHunter.md#9-install-kali-nethunter)
+
+</p>
+
 ---
 ## 1. ADB
 
