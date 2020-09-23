@@ -222,11 +222,29 @@ the whole process, just skip the build steps.
 	* Backup mirror:	https://github.com/volgk/j7xelte-nethunter
 * Download toolchain64:
 			
-		git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b  marshmallow-release toolchain64
+		git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b  nougat-release toolchain64
 		
 * Modify the make wrapper conform your needs
   		
 		$ vim make
+		
+	* Example:
+	
+		#!/bin/bash -x
+
+		export TOOLCHAIN=$(pwd)/../android-linux-3.18.14/toolchain64
+		export OUTDIR="O=$(pwd)/../android-linux-3.18.14/build"
+
+		export PATH=$TOOLCHAIN/bin:$PATH
+		export ARCH=arm64
+		export SUBARCH=arm64
+		export CROSS_COMPILE=aarch64-linux-android-
+		export ANDROID_MAJOR_VERSION=o
+
+		export INSTALL_MOD_PATH=/path/to/kali-nethunter-project/nethunter-installer/devices/oreo/j7xelte
+
+		make $@
+
 		
 * Build the kernel and the modules
 	
