@@ -195,7 +195,7 @@ Porting Kali Nethunter to LG K7 (X210DS)
 
 * Download SP Flash Tools for Linux 
 	* Link:		https://spflashtool.com/download/
-	* Crux port:	XXX
+	* Crux port:	https://github.com/non-yellow-spot/vccrux/tree/3.6/sp-flash-tool-bin
 * Assuming SP Flash is installed. Open it
 	
 	$ ./flash_tool
